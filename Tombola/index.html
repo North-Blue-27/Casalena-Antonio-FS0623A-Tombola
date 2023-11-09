@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombola</title>
+    <link rel="stylesheet" href="assets/fileCSS/file.css">
+</head>
+<body>
+
+    <table id="tombola">
+        <thead><h1>Tabellone</h1></thead>
+        <script>
+            for (let i = 1; i <= 76; i++) {
+                document.write('<td id="cellaNum' + i + '">' + i + '</td>');
+                if (i % 10 === 0) {
+                    document.write('</tr><tr>');
+                }
+            }
+        </script>
+    </table>
+
+    <button onclick="estraiNumero()">Estrai Numero</button>
+
+    <script src="assets/fileJS/file.js"></script>
+</body>
+</html>
